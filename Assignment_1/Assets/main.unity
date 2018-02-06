@@ -260,7 +260,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.18144299, y: 0, z: 0.5}
+      m_Extent: {x: 0.16394472, y: 0, z: 0.5}
   m_Shapes:
     vertices: []
     shapes: []
@@ -313,7 +313,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: 31cc39be00000000000000bf000000000000803f00000000000000000000000031cc39be000000000000003f000000000000803f00000000000000000000803f31cc393e00000000000000bf000000000000803f000000000000803f0000000031cc393e000000000000003f000000000000803f000000000000803f0000803f
+    _typelessdata: 20e127be00000000000000bf000000000000803f00000000000000000000000020e127be000000000000003f000000000000803f00000000000000000000803f20e1273e00000000000000bf000000000000803f000000000000803f0000000020e1273e000000000000003f000000000000803f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -392,7 +392,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5ea8abf934a24cbaac5a9c00a83f8e10, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4584c3379d7146c3ac996470323363fd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -547,7 +547,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2c759ad30fe64712877602a5bcdc7196, type: 3}
+        m_Texture: {fileID: 2800000, guid: cb65a6f49b204339a785544a74f61a47, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -647,14 +647,14 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: landing_strip
+  mTrackableName: enchaned_strip_2
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Target_images.xml
   mExtendedTracking: 0
-  mAspectRatio: 2.7556865
+  mAspectRatio: 3.0498085
   mImageTargetType: 0
-  mWidth: 6.386793
+  mWidth: 5.7708545
   mHeight: 17.6
 --- !u!4 &518805459
 Transform:
@@ -1019,7 +1019,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b6ff41fca00b42858bfde2dd95bdfcf8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4f00f308670f411ab3e3182e081697a4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1031,7 +1031,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: bomberMaterial
+  m_Name: bomber_v3Material
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -1044,7 +1044,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 67a4365bbf324a6f901a1b22e00aed96, type: 3}
+        m_Texture: {fileID: 2800000, guid: 51d7876cc6bb47c7a064bc0eb4048c07, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1432,7 +1432,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: landing_stripMaterial
+  m_Name: enchaned_strip_2Material
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -1445,7 +1445,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 19197256fb1d487faa20a26f867275cc, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8e834c62051b491ba880b1516b578d14, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1535,7 +1535,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9474a52b89a240e8b7e99ff3119a0e07, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6c750e8ca0ce4a46a6e90c4940f1ca81, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1635,7 +1635,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: bomber
+  mTrackableName: bomber_v3
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Target_images.xml
