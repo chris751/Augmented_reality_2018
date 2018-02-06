@@ -31,7 +31,6 @@ public class Metoer : MonoBehaviour {
 		CalcDistance ();
 
 		if (Input.GetKey (KeyCode.Space)){
-			//Debug.Log ("Distance " + distance.magnitude + " xScale : " + xScale + " zScale : " + zScale);
 			Debug.Log ("real scale : " + realXScale);
 			Debug.Log ("lossy Scale : " + xScale);
 		}
@@ -40,13 +39,9 @@ public class Metoer : MonoBehaviour {
 
 	void CalcDistance(){
 		xScale = (earthPrefab.transform.lossyScale.x + transform.lossyScale.x)/2;
-		//zScale = (earthPrefab.transform.lossyScale.z + transform.lossyScale.z)/2;
 		distance = transform.position - earthPrefab.transform.position;
-		//Debug.Log ("Distance " + distance + " xScale : " + xScale + " yScale : " + yScale);
 		if (Mathf.Abs(distance.magnitude) < realXScale) {
-			//Debug.Log ("Distance " + distance + " xScale : " + xScale + " zScale : " + zScale);
 			Debug.Log ("Collision");
-			//M
 			GetComponent<ParticleSystem>().Play();
 		}
 
