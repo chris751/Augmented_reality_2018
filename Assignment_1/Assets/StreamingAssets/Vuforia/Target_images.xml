@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="bomber_v3" size="4.600000 6.032075" />
+    <ImageTarget name="bomber_v2" size="4.600000 6.032075" />
+    <ImageTarget name="enchaned_strip_2" size="17.600000 53.676632" />
+    <ImageTarget name="enchaned_strip" size="17.600000 53.676632" />
+    <ImageTarget name="spaceship" size="10.700000 15.717772" />
+    <ImageTarget name="landing_strip" size="17.600000 48.500084" />
+    <ImageTarget name="falcon" size="10.100000 13.664706" />
+    <ImageTarget name="fighter" size="4.700000 5.154839" />
+    <ImageTarget name="bomber" size="4.600000 6.032075" />
+    <ImageTarget name="earth" size="20.000000 20.016935" />
+    <ImageTarget name="aruco_marker_303" size="17.000000 16.970434" />
+    <ImageTarget name="marker1" size="15.000000 15.000000" />
+    <ImageTarget name="ChrisCard" size="0.008500 0.005455" />
+  </Tracking>
+</QCARConfig>
