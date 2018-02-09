@@ -25,7 +25,7 @@ public class Landing : MonoBehaviour {
 
 		Debug.Log (Vector3.Dot (shuttlePosition, landingstripPosition));
 
-		if (Vector3.Dot (shuttlePosition, landingstripPosition) >= 0.9999f) {
+		if (Vector3.Dot (shuttlePosition, landingstripPosition) >= 0.9996f) {
 			quadColor.color = Color.green;
 		} else {
 			quadColor.color = Color.red;
