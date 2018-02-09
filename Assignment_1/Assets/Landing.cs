@@ -17,8 +17,8 @@ public class Landing : MonoBehaviour {
 	void Start () {
 		quadColor = GetComponent<Renderer>().material;
 
-		shuttlePosition = shuttle.transform.rotation;
-		landingstripPosition = landingstrip.transform.rotation;
+		//shuttlePosition = shuttle.transform.rotation;
+		//landingstripPosition = landingstrip.transform.rotation;
 	}
 	
 	// Update is called once per frame
