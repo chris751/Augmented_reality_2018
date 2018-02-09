@@ -16,19 +16,18 @@ public class Landing : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		quadColor = GetComponent<Renderer>().material;
-
-		//shuttlePosition = shuttle.transform.rotation;
-		//landingstripPosition = landingstrip.transform.rotation;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		shuttlePosition = shuttle.transform.eulerAngles.normalized;
+		landingstripPosition = landingstrip.transform.eulerAngles.normalized;
+
 		Debug.Log (Vector3.Dot (shuttlePosition, landingstripPosition));
-		if (Vector3.Dot (shuttlePosition, landingstripPosition) <= 1.2f && Vector3.Dot (shuttlePosition, landingstripPosition) >= 0.8) {
-			//quadColor.SetColor (_Color, Color.green);
+
+		if (Vector3.Dot (shuttlePosition, landingstripPosition) >= 0.9999f) {
 			quadColor.color = Color.green;
 		} else {
-			//quadColor.SetColor (_Color, Color.red);
 			quadColor.color = Color.red;
 		}
 	}

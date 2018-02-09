@@ -13,7 +13,7 @@ public class PrintTransform : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (gameObject.name + " rotation: " + transform.rotation);
+		Debug.Log (gameObject.name + " rotation: " + transform.eulerAngles.normalized);
 
 	}
 }
