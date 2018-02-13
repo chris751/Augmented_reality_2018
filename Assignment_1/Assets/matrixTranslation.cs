@@ -11,6 +11,12 @@ public class matrixTranslation : MonoBehaviour {
 	private Vector3 nosePosVector;
 	private Vector3 shuttleVector;
 	private Vector3 earthPosVector;
+
+	private Matrix4x4 noseMatrix;
+
+	private Matrix4x4 multiplied;
+
+	private string collisionDisplay = "test "; 
 		
 	// Use this for initialization
 	void Start () {
@@ -19,49 +25,40 @@ public class matrixTranslation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update() {
+		
+		
 		nosePosVector = shuttleNose.transform.localPosition;
 		earthPosVector = planet_earth.transform.position;
 		shuttleVector = shuttle.transform.position;
 
-		Matrix4x4 noseMatrix = T (nosePosVector.x, nosePosVector.y, nosePosVector.z);
-		//Matrix4x4 EarthMatrix = T (earthPosVector.x, earthPosVector.y, earthPosVector.z);
-		//Matrix4x4 shuttleMatrix = T (shuttleVector.x, shuttleVector.y, shuttleVector.z);
-
-		//Matrix4x4 inversedEarthMatrix = EarthMatrix.inverse;
-
-		//Matrix4x4 res = shuttleMatrix * noseMatrix;  
-
-//		Debug.Log ("nose" + noseMatrix); 
-//		Debug.Log ("shuttle" + noseMatrix); 
-//		Debug.Log ("Earth" + noseMatrix); 
-//	    
+		noseMatrix = Matrix4x4.TRS (transform.localPosition, transform.localRotation, transform.localScale);  
 		Matrix4x4 earthMatrix = planet_earth.transform.worldToLocalMatrix; 
 		Matrix4x4 shuttleMatrix = shuttle.transform.localToWorldMatrix; 
 
-		Matrix4x4 multipled = earthMatrix * shuttleMatrix * noseMatrix;  
+		multiplied = earthMatrix * shuttleMatrix * noseMatrix;  
+		checkForEathCollision ();
+	}
 
+	private void checkForEathCollision(){
+		Vector4 nosePos = multiplied.GetColumn (3);
+		Vector2 posVector = new Vector2 (nosePos.x, nosePos.z);
+			
+		bool heightCollision = (planet_earth.transform.localScale.x / 2) > nosePos.y * 20;
+		bool widthCollision = posVector.magnitude * 20 < (planet_earth.transform.localScale.x / 2);
 
-//		Debug.Log (worldMatrix);
-
-		if( Input.GetKey(KeyCode.Q)){
-			Debug.Log (multipled);
-		}
-
-		if( Input.GetKey(KeyCode.W)){
-//			Debug.Log (noseMatrix);
-//			Debug.Log (res);
+		if (widthCollision && heightCollision) {
+			if (nosePos.z > 0) {
+				collisionDisplay = "Northern hemisphere";
+			} else if (nosePos.z < 0) {
+				collisionDisplay = "Southern hemisphere";
+			} 
+		} else {
+			collisionDisplay = "No collision";
 		}
 	}
 
-	private Matrix4x4 T (float x, float y, float z)
-	{
-		Matrix4x4 m = new Matrix4x4();
-
-		m.SetRow(0, new Vector4(1, 0, 0, x));
-		m.SetRow(1, new Vector4(0, 1, 0, y));
-		m.SetRow(2, new Vector4(0, 0, 1, z));
-		m.SetRow(3, new Vector4(0, 0, 0, 1));
-
-		return m;
+	private void OnGUI(){
+		GUI.color = Color.blue;
+		GUI.Label (new Rect (10, 40, 500, 100), " " +collisionDisplay);
 	}
 }
