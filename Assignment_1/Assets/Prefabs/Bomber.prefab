@@ -96,12 +96,12 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: bomber_v3
+  mTrackableName: bomber_v4
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Target_images.xml
   mExtendedTracking: 0
-  mAspectRatio: 1.3113207
+  mAspectRatio: 0.76259005
   mImageTargetType: 0
   mWidth: 3.5079138
   mHeight: 4.6
