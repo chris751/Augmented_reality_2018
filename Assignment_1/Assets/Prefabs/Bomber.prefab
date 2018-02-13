@@ -103,8 +103,8 @@ MonoBehaviour:
   mExtendedTracking: 0
   mAspectRatio: 0.76259005
   mImageTargetType: 0
-  mWidth: 3.5079138
-  mHeight: 4.6
+  mWidth: 4.6
+  mHeight: 3.507914
 --- !u!114 &114206070332383732
 MonoBehaviour:
   m_ObjectHideFlags: 1
