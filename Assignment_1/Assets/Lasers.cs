@@ -6,7 +6,7 @@ public class Lasers : MonoBehaviour {
     public GameObject Cannon;
     // Use this for initialization
     private Material material;
-    private Ray ray;
+     RaycastHit hit;
 	void Start () {
         
     }
@@ -16,10 +16,6 @@ public class Lasers : MonoBehaviour {
     {
        
           
-            // Debug.Log("space key was pressed");
-
-            // Physics.Raycast(Cannon.transform.position, Vector3.forward);
-            // OnRenderObject();
             Vector3 test = Cannon.transform.TransformDirection(Vector3.forward);
 
             Vector3 forward = Cannon.transform.TransformDirection(Vector3.forward) * 20;
@@ -28,10 +24,19 @@ public class Lasers : MonoBehaviour {
             Physics.Raycast(Cannon.transform.position, test, 20);
             Debug.DrawRay(Cannon.transform.position, forward, Color.green, 0.05f, true);
 
-
-       
-
       
+        
+        if (Physics.Raycast(Cannon.transform.position, test,out hit, 20))
+
+          
+        //   if (hit.collider != null)
+        //  hit.collider.enabled = false;
+
+        if (hit.collider.gameObject.name == "kill")
+        {
+            Debug.Log("HIT");
+        }
+
     }
     void OnRenderObject()
     {
