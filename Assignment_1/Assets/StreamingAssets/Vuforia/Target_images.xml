@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="bomber_v4" size="4.600000 3.507914" />
     <ImageTarget name="bomber_v3" size="4.600000 6.032075" />
     <ImageTarget name="bomber_v2" size="4.600000 6.032075" />
     <ImageTarget name="enchaned_strip_2" size="17.600000 53.676632" />
