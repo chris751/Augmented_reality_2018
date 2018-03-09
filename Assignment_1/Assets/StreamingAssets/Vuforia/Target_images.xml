@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="unwrapped_skull" size="21.010000 21.010000" />
+    <ImageTarget name="unwrapped_dog" size="21.010000 21.010000" />
+    <ImageTarget name="beer" size="12.740000 16.024879" />
+    <ImageTarget name="terrain_controller" size="12.030000 11.959442" />
+    <ImageTarget name="terrain_base" size="13.440000 13.404723" />
     <ImageTarget name="bomber_v4" size="4.600000 3.507914" />
     <ImageTarget name="bomber_v3" size="4.600000 6.032075" />
     <ImageTarget name="bomber_v2" size="4.600000 6.032075" />
